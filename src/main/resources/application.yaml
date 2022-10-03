@@ -1,0 +1,9 @@
+naver:
+  url:
+    search:
+      local: https://openapi.naver.com/v1/search/local.json
+  client:
+    id: QLGJE6EX7LhjIhC9RgMV
+    secret: zc69y1YCHY
+server:
+  port: 9092
