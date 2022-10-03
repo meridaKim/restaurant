@@ -63,9 +63,9 @@ public class WishListService extends WishListEntity {
 
 
     public List<WishListDto> findAll() {
-        return wishListRepository.listAll()
+        return (List<WishListDto>) wishListRepository.listAll()
                 .stream()
-                .map(it->entityToDto(it))
+                .map(it->entityToDto((WishListEntity) it))
                 .collect(Collectors.toList());
     }
 
